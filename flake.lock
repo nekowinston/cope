@@ -1,5 +1,18 @@
 {
   "nodes": {
+    "addons": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-L0KwpKEbFykVOaT4PVjXSuTsyxTePIzpRl34BBScmW4=",
+        "path": "./addons.json",
+        "type": "path"
+      },
+      "original": {
+        "path": "./addons.json",
+        "type": "path"
+      }
+    },
     "flake-utils": {
       "locked": {
         "lastModified": 1656928814,
@@ -65,6 +78,7 @@
     },
     "root": {
       "inputs": {
+        "addons": "addons",
         "mozilla-addons-to-nix": "mozilla-addons-to-nix",
         "nixpkgs": "nixpkgs_2"
       }
